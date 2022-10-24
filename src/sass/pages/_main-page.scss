@@ -13,6 +13,8 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   background: linear-gradient(270deg, #373737, #212121);
+  background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+  background-image: linear-gradient(45deg, #020e1d 0%, #151141 100%);
   letter-spacing: 2px;
   overflow-x: hidden;
 }
@@ -32,6 +34,7 @@ address {
 :focus {
   outline: none;
 }
+
 .header-for-bots {
   display: none;
 }
@@ -42,10 +45,12 @@ address {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+header {
+  padding-top: 40px;
+}
 .logo-link {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,10 +64,10 @@ address {
 }
 
 .logo {
-  width: 300px;
-  height: 300px;
-
-  animation: goAround 7s linear infinite;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  // animation: goAround 7s linear infinite;
 }
 @keyframes goAround {
   0% {
@@ -73,7 +78,7 @@ address {
   }
 }
 .hero__header {
-  color: #ddb703;
+  color: #1500ff;
   font-size: 30px;
   text-align: center;
   font-weight: 700;
@@ -140,16 +145,16 @@ address {
   bottom: 50%;
   transition: 300ms;
   transition-delay: 300ms;
-  background-color: #ddb703;
-  -webkit-box-shadow: 0px 0px 11px 0px rgba(221, 183, 3, 1);
-  -moz-box-shadow: 0px 0px 11px 0px rgba(221, 183, 3, 1);
-  box-shadow: 0px 0px 11px 0px rgba(221, 183, 3, 1);
+  background-color: #1500ff;
+  -webkit-box-shadow: 0px 0px 11px 0px #1500ff;
+  -moz-box-shadow: 0px 0px 11px 0px #1500ff;
+  box-shadow: 0px 0px 11px 0px #1500ff;
 }
 
 .btn div {
   transition: 300ms;
   position: absolute;
-  background-color: #ddb703;
+  background-color: #1500ff;
 }
 
 .btn .top {
