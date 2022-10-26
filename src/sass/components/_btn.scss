@@ -1,0 +1,123 @@
+.btn {
+  padding: 20px 40px;
+  background-color: #000;
+  border: none;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+  transition: 300ms;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn span {
+  color: gray;
+  position: relative;
+  transition: 300ms;
+  transition-delay: 300ms;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  transition: 300ms;
+  transition-delay: 300ms;
+  background-color: #1500ff;
+  -webkit-box-shadow: 0px 0px 11px 0px #1500ff;
+  -moz-box-shadow: 0px 0px 11px 0px #1500ff;
+  box-shadow: 0px 0px 11px 0px #1500ff;
+}
+
+.btn div {
+  transition: 300ms;
+  position: absolute;
+  background-color: #1500ff;
+}
+
+.btn .top {
+  width: 15px;
+  height: 2px;
+  top: 0;
+  left: 0;
+}
+
+.btn .bottom {
+  width: 15px;
+  height: 2px;
+  bottom: 0;
+  right: 0;
+}
+
+.btn .left {
+  width: 2px;
+  height: 15px;
+  top: 0;
+  left: 0;
+}
+
+.btn .right {
+  width: 2px;
+  height: 15px;
+  bottom: 0;
+  right: 0;
+}
+
+.btn:hover {
+  color: #000;
+}
+
+.btn:hover span {
+  color: #000;
+}
+
+.btn:hover:before {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.btn:hover .top,
+.btn:hover .bottom {
+  width: 100%;
+}
+
+.btn:hover .left,
+.btn:hover .right {
+  height: 100%;
+}
+
+@media screen and (min-width: 340px) {
+  .btn {
+    width: 300px;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 1;
+  }
+}

@@ -1,1 +1,6 @@
-@import "./pages/main-page";
+@import "./sections/header";
+@import "./sections/body.scss";
+@import "./sections/footer";
+
+@import "./components/btn";
+@import "./components/animations";

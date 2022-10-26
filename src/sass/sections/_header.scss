@@ -1,0 +1,51 @@
+header {
+  padding-top: 30px;
+}
+
+.logo-link {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation-delay: 0.5s;
+  animation: fall-in 0.8s, bounce 0.8s;
+  top: 0px;
+}
+.header-title {
+  color: #1500ff;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+  animation: slideIn 0.5s ease;
+}
+
+@media screen and (min-width: 450px) {
+  .header-title {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    width: 250px;
+    height: 250px;
+  }
+  .logo-link {
+    width: 250px;
+    height: 250px;
+  }
+}
